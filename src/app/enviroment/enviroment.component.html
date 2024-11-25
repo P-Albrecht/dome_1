@@ -1,4 +1,8 @@
 <div class="enviroment-container">
+    <app-hero-detail *ngIf="this.component === 'HeroDetailComponent'"
+    ></app-hero-detail>
+    <app-hero-search *ngIf="this.component === 'HeroSearchComponent'"
+    ></app-hero-search>
 </div>
 
 <button type="button" (click)="onClickMe()">Click me!</button>
